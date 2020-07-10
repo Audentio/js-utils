@@ -8,7 +8,7 @@
     },
     "scripts": {
         "build": "tsc",
-        "release": "release-it",
+        "release": "yarn run build && release-it",
         "snyk-protect": "snyk protect",
         "prepublish": "npm run snyk-protect"
     },
@@ -37,6 +37,8 @@
     },
     "dependencies": {
         "query-string": "^6.10.1",
+        "react": "^16.13.1",
+        "react-ga": "^3.1.2",
         "yup": "^0.28.1"
     },
     "snyk": true

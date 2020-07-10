@@ -1,6 +1,7 @@
 node_modules
 dist
 tmp
+lib
 
 stats.json
 

@@ -1,4 +1,6 @@
 import ReactGA, { FieldsObject, TimingArgs, InitializeOptions, TrackerNames, EventArgs } from 'react-ga';
+
+// @ts-ignore comment
 import { GA_ID, GA_FORCE_ENABLE } from 'config/public';
 
 const shouldLog = GA_ID && (!__DEV__ || GA_FORCE_ENABLE);

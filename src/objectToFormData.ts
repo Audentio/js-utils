@@ -32,6 +32,7 @@ export function objectToFormData(body_unfiltered, $form_data?: FormData, pre?: a
             // form_data.append(, value);
             if (!body[prop].length) {
                 // Empty array
+                // @ts-ignore comment
                 form_data.append(`${key}[]`, []);
             } else {
                 body[prop].forEach(value => {
